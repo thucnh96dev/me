@@ -1,507 +1,406 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-
-    <title>Nguyen Trung Thuc</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <style type="text/css">
-      body {
-        margin-top: 20px;
-      }
-      .candidates-profile-bg {
-        padding: 180px 0px 80px 0px;
-        background: url(https://img.freepik.com/free-vector/neon-light-arrow-direction-perspective_1017-22033.jpg);
-        background-size: cover;
-        position: relative;
-        background-position: center center;
-      }
-
-      .candidates-profile-details img {
-        max-width: 130px;
-        background: transparent;
-      }
-
-      .candidates-profile-details .candidates-profile-name {
-        font-weight: 300;
-      }
-
-      .candidates-profile-icons .list-inline-item {
-        margin: 0 1px !important;
-      }
-
-      .candidates-profile-social-icons li a {
-        height: 32px;
-        width: 32px;
-        color: rgba(255, 255, 255, 0.7);
-        text-align: center;
-        font-size: 15px;
-        display: inline-block;
-        line-height: 30px;
-        border-radius: 50%;
-        border: 1px solid rgba(255, 255, 255, 0.7);
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-      }
-
-      .candidates-profile-social-icons li a:hover {
-        background-color: #ff4f6c;
-        color: #ffffff;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-        border-color: #ff4f6c;
-      }
-
-      .profile-education-icon {
-        border: 1px solid #ececec;
-        position: absolute;
-        width: 90px;
-        height: 90px;
-        line-height: 90px;
-        font-size: 42px;
-        border-radius: 50px;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        background-color: #ffffff;
-        color: #ff4f6c;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-      }
-
-      .candidates-profile-education {
-        padding: 64px 24px 24px;
-      }
-
-      .candidates-profile-education:hover .profile-education-icon {
-        background-color: #ff4f6c;
-        border: 1px solid #ff4f6c;
-        color: #ffffff;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-      }
-
-      .job-details {
-        padding: 210px 0px 60px 0px;
-
-        background-size: cover;
-        position: relative;
-        background-position: center center;
-      }
-
-      .job-detail {
-        border: 1px solid #ececec;
-        border-radius: 6px;
-      }
-
-      .job-details-desc-item p {
-        overflow: hidden;
-      }
-
-      .job-detail-icons li {
-        margin: 2px !important;
-      }
-
-      .job-detail-icons li a {
-        height: 32px;
-        width: 32px;
-        color: #ff4f6c;
-        text-align: center;
-        font-size: 15px;
-        display: inline-block;
-        line-height: 30px;
-        border-radius: 50%;
-        border: 1px solid #ff4f6c;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-      }
-
-      .job-detail-icons li a:hover {
-        background-color: #ff4f6c;
-        color: #ffffff;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-      }
-
-      .job-detail-time li {
-        padding: 10px 4px;
-        border-top: 1px solid #ececec;
-      }
-
-      .job-detail-time li:first-child {
-        border-top: none;
-      }
-      .section {
-        padding-bottom: 80px;
-        padding-top: 80px;
-        position: relative;
-      }
-    </style>
-  </head>
-  <body>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
-      integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo="
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
-      integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4="
-      crossorigin="anonymous"
-    />
-    <section class="candidates-profile-bg">
-      <div class="bg-overlay"></div>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="candidates-profile-details text-center">
-              <img
-                src="https://i.pinimg.com/564x/3d/ec/95/3dec9505b88a9c600582f5f19657cd81.jpg"
-                class="img-fluid d-block mx-auto rounded-circle img-thumbnail mb-4"
-              />
-              <h4 class="text-white candidates-profile-name mb-2">
-                NGUYEN TRUNG THUC
-              </h4>
-              <p class="text-white-50 mb-2">
-                <i class="mdi mdi-bank mr-2"></i>Magic dev
-              </p>
-              <ul class="candidates-profile-icons list-inline mb-3">
-                <li class="list-inline-item text-white-50 pr-2 f-16">
-                  JAVA Developer
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" class="text-warning"
-                    ><i class="mdi mdi-star"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" class="text-warning"
-                    ><i class="mdi mdi-star"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" class="text-warning"
-                    ><i class="mdi mdi-star"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" class="text-warning"
-                    ><i class="mdi mdi-star"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" class="text-warning"
-                    ><i class="mdi mdi-star"></i
-                  ></a>
-                </li>
-              </ul>
-              <ul class="candidates-profile-social-icons list-inline mb-0">
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/thucnh96.dev/" target="_blank" class><i class="mdi mdi-facebook"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://twitter.com/thucnh96dev" target="_blank" class><i class="mdi mdi-twitter"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.instagram.com/kuboy.96/" target="_blank" class><i class="mdi mdi-instagram"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" class><i class="mdi mdi-google-plus"></i></a>
-                </li>
-              </ul>
+﻿<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Thực Nguyễn</title>
+      <!-- Tell the browser to be responsive to screen width -->
+      <meta meta name="viewport" content=
+         "width=device-width, user-scalable=no" />
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/roboto.css">
+      <link rel="stylesheet" href="css/fontawesome.css">
+      <link rel="stylesheet" href="css/regular.css">
+      <link rel="stylesheet" href="css/solid.css">
+   </head>
+   <body>
+      <div class="profile">
+         <div class="img-thuc">
+         </div>
+         <div class="gioithieu-thuc">
+            <h1 class="u-text-1">nguyễn trung THỰC</h1>
+            <div class="u-social-icons u-spacing-10 u-social-icons-1">
+               <a class="u-social-url" title="facebook" target="_blank" href="https://facebook.com/name">
+                  <span class="u-icon u-icon-circle u-social-facebook u-social-icon u-text-black u-icon-1">
+                     <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                        <use xlink:href="#svg-bc6b"></use>
+                     </svg>
+                     <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-bc6b">
+                        <path fill="currentColor" d="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2
+                           c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"></path>
+                     </svg>
+                  </span>
+               </a>
+               <a class="u-social-url" title="twitter" target="_blank" href="https://twitter.com/name">
+                  <span class="u-icon u-icon-circle u-social-icon u-social-twitter u-text-black u-icon-2">
+                     <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                        <use xlink:href="#svg-ed97"></use>
+                     </svg>
+                     <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-ed97">
+                        <path fill="currentColor" d="M92.2,38.2c0,0.8,0,1.6,0,2.3c0,24.3-18.6,52.4-52.6,52.4c-10.6,0.1-20.2-2.9-28.5-8.2
+                           c1.4,0.2,2.9,0.2,4.4,0.2c8.7,0,16.7-2.9,23-7.9c-8.1-0.2-14.9-5.5-17.3-12.8c1.1,0.2,2.4,0.2,3.4,0.2c1.6,0,3.3-0.2,4.8-0.7
+                           c-8.4-1.6-14.9-9.2-14.9-18c0-0.2,0-0.2,0-0.2c2.5,1.4,5.4,2.2,8.4,2.3c-5-3.3-8.3-8.9-8.3-15.4c0-3.4,1-6.5,2.5-9.2
+                           c9.1,11.1,22.7,18.5,38,19.2c-0.2-1.4-0.4-2.8-0.4-4.3c0.1-10,8.3-18.2,18.5-18.2c5.4,0,10.1,2.2,13.5,5.7c4.3-0.8,8.1-2.3,11.7-4.5
+                           c-1.4,4.3-4.3,7.9-8.1,10.1c3.7-0.4,7.3-1.4,10.6-2.9C98.9,32.3,95.7,35.5,92.2,38.2z"></path>
+                     </svg>
+                  </span>
+               </a>
+               <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/name">
+                  <span class="u-icon u-icon-circle u-social-icon u-social-instagram u-text-black u-icon-3">
+                     <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                        <use xlink:href="#svg-ea73"></use>
+                     </svg>
+                     <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-ea73">
+                        <path fill="currentColor" d="M55.9,32.9c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2s23.2-10.4,23.2-23.2S68.7,32.9,55.9,32.9z
+                           M55.9,69.4c-7.4,0-13.3-6-13.3-13.3c-0.1-7.4,6-13.3,13.3-13.3s13.3,6,13.3,13.3C69.3,63.5,63.3,69.4,55.9,69.4z"></path>
+                        <path fill="#FFFFFF" d="M79.7,26.8c-3,0-5.4,2.5-5.4,5.4s2.5,5.4,5.4,5.4c3,0,5.4-2.5,5.4-5.4S82.7,26.8,79.7,26.8z"></path>
+                        <path fill="currentColor" d="M78.2,11H33.5C21,11,10.8,21.3,10.8,33.7v44.7c0,12.6,10.2,22.8,22.7,22.8h44.7c12.6,0,22.7-10.2,22.7-22.7
+                           V33.7C100.8,21.1,90.6,11,78.2,11z M91,78.4c0,7.1-5.8,12.8-12.8,12.8H33.5c-7.1,0-12.8-5.8-12.8-12.8V33.7
+                           c0-7.1,5.8-12.8,12.8-12.8h44.7c7.1,0,12.8,5.8,12.8,12.8V78.4z"></path>
+                     </svg>
+                  </span>
+               </a>
             </div>
-          </div>
-        </div>
+            <h6 class="u-text-2">JAVA Developer </h6>
+            <p class="u-text-3">Tôi là một lập trình viên vui tính, sẵn lòng chinh phục mọi trở ngại với nụ cười và một chút hài hước. Nếu bạn tìm kiếm một người có khả năng biến những dòng mã thành những cái gì đó thực sự đặc biệt, thì tôi chính là người bạn đang tìm kiếm.
+               <br>Khi không gõ code, tôi là một người yêu thích cười và làm cho mọi người xung quanh tôi cười. Tôi tin rằng sự hài hước là một phần không thể thiếu trong cuộc sống và cũng có thể tạo ra những liên kết mạnh mẽ giữa các thành viên trong đội làm việc. 
+            </p>
+            <p class="u-text-5">
+               <i class="fas fa-phone-alt fa-fw"></i>Điện thoại:
+               <span class="dt">0964xxx776</span>
+            </p>
+            <p class="u-text-5">
+               <i class="fas fa-envelope fa-fw"></i>Email:
+               <span class="dt"><a>thucnh96.dev@gmail.com</a></span>
+            </p>
+            <p class="u-text-5">
+               <i class="fas fa-map-marker fa-fw"></i>Địa chỉ:
+               <span class="dt">Đà Nẵng, Hải Châu District, Da Nang</span>
+            </p>
+         </div>
       </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h3 class="text-dark">Mô tả Thực</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="job-detail mt-2 p-4">
-              <div class="job-detail-desc">
-                <p class="text-muted f-14 mb-3">
-                    Tôi là một lập trình viên vui tính, sẵn lòng chinh phục mọi trở ngại với nụ cười và một chút hài hước. Nếu bạn tìm kiếm một người có khả năng biến những dòng mã thành những cái gì đó thực sự đặc biệt, thì tôi chính là người bạn đang tìm kiếm.
-                </p>
-                <p class="text-muted f-14 mb-0">
-                    Khi không gõ code, tôi là một người yêu thích cười và làm cho mọi người xung quanh tôi cười. Tôi tin rằng sự hài hước là một phần không thể thiếu trong cuộc sống và cũng có thể tạo ra những liên kết mạnh mẽ giữa các thành viên trong đội làm việc.
-                </p>
-              </div>
-              <hr />
-              <ul class="list-inline mt-3 mb-0">
-                <li class="list-inline-item mr-3">
-                  <a href class="text-muted f-15 mb-0"
-                    ><i class="mdi mdi-map-marker mr-2"></i>Đà Nẵng, Hải Châu District, Da Nang</a
-                  >
-                </li>
-                <li class="list-inline-item mr-3">
-                  <a href class="text-muted f-15 mb-0"
-                    ><i class="mdi mdi-email mr-2"></i
-                    ><span
-                      class="__cf_email__"
-                      data-cfemail="05526067716d606860762b697161456268646c692b666a68"
-                      >thucnh96.dev@gmail.com</span
-                    ></a
-                  >
-                </li>
-                <li class="list-inline-item mr-3">
-                  <a href class="text-muted f-15 mb-0"
-                    ><i class="mdi mdi-twitter mr-2"></i>Twitter</a
-                  >
-                </li>
-              </ul>
+      <div class="hocluc">
+         <div class="max-width">
+            <h1 class="u-text-1">Học Vấn</h1>
+            <ul>
+               <li>
+                  <div class="noidung">
+                     <h2>fpt university</h2>
+                     <p>May 2016 - April 2019</p>
+                     <p>Software Engineer</p>
+                  </div>
+               </li>
+               <li>
+                  <div class="noidung">
+                     <h2>University of Information Technology - VNUHCM</h2>
+                     <p>May 2014 - April 2015</p>
+                     <p>Computer Science</p>
+                  </div>
+               </li>
+               <li>
+                  <div class="noidung">
+                     <h2>THPT Ha Huy Tap</h2>
+                     <p>May 2011 - April 2014</p>
+                     <p>Student</p>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="experience">
+         <h1 class="u-text-1">Kinh nghiệm phát triển</h1>
+         <div class="flex-cotkn">
+            <div class="cot-1">
+               <h4>Unitech</h4>
+               <ul>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     JAVA Developer
+                  </li>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     Jan 2020
+                  </li>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     Salary : 0$
+                  </li>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     website: <a>https://unitech.vn/ </a>
+                  </li>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     Địa chỉ: 07th Floor – Danang Software Park, 02 Quang Trung St., Danang, VN 
+                  </li>
+               </ul>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <h3 class="text-dark mt-4">Thực thế nào</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="job-detail mt-2 p-4">
-              <div class="job-detail-desc">
-                <p class="text-muted f-14 mb-3">
-                    <h1>Mọi người hay gọi tôi là Lực !</h1>
-                    <h3>Tôi 18 tuổi và là kĩ sư phần mềm. </h3>
-                    <p>Mọi người thường miêu tả tôi là người hài hước và sáng tạo, và tôi không thể phủ nhận điều đó!</p>
-               
-                    <p>Để tôi chỉ cho bạn một thứ độc đáo...</p>
-                    <h3>Cái kim trong bọc không phải lâu ngày sẽ lòi ra</h3>
-                     <h3>.... mà nó sẽ chích lủng cái bọc</h3>                   
-                    <p>Tôi thích thêm một chút sáng tạo vào mọi thứ tôi làm!</p>
-                    <p>Nếu bạn muốn biết thêm về tôi, chỉ cần liên hệ. Tôi luôn sẵn sàng cho một cuộc trò chuyện thú vị!</p>
-
-                    <h2>Cảm ơn bạn đã ghé thăm, chiếc bánh Donut phía dưới là của bạn.  </h2>
-                    <p>Món quà chiêu đãi khi bạn đến với tôi... Nó được tạo ra bởi những dòng CODE </p>
-                </p>
-                <p class="text-muted f-14 mb-0">
+            <div class="cot-1">
+               <h4>Enjoy Works</h4>
+               <ul>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     JAVA Developer
+                  </li>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     Fab 2019 - July 2020
+                  </li>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     Salary : 0$
+                  </li>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     website: <a>https://enjoyworks.co.kr/ </a>
+                  </li>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     04998 239-1 Neungdong-ro, Gwangjin-gu, Seoul Tầng 3 2-dong Thưởng thức công việc 
+                  </li>
+               </ul>
+            </div>
+            <div class="cot-1">
+               <h4>Eco Logistic</h4>
+               <ul>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     JAVA Developer
+                  </li>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     Jan 2020
+                  </li>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     Salary : 0$
+                  </li>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     website: <a> <a>Do not have </a> </a>
+                  </li>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                    <a>Địa chỉ: Do not have </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="cot-1">
+               <h4>MAMA Company</h4>
+               <ul>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     JAVA Developer
+                  </li>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     Fab 2019 - July 2020
+                  </li>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     Salary : 0$
+                  </li>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     website: <a>Do not have </a>
+                  </li>
+                  <li>
+                     <div class="u-list-icon u-text-grey-50">
+                        <svg class="u-svg-content" viewBox="0 0 409.6 409.6" x="0px" y="0px" id="svg-8185">
+                           <g>
+                              <g>
+                                 <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067    C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067    s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     Địa chỉ: Cam Xuyen - Ha Tinh
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+	  <div class="thuc-nham">
+	     <h1 class="u-text-1">Mọi người hay gọi tôi là Lực !</h1>
+	     <div class="u-image u-image-circle u-image-1"></div>
+		 <div class="u-align-center">
+		     <div class="u-container-layout">
+			    <h3 class="u-text-6">Tôi 18 tuổi và là kĩ sư phần mềm. </h3>
+				<p class="u-text-4">Mọi người thường miêu tả tôi là người hài hước và sáng tạo, và tôi không thể phủ nhận điều đó!</p>
+				<p class="u-text-4">Để tôi chỉ cho bạn một thứ độc đáo...</p>
+			 </div>
+		 </div>
+		 <div class="u-align-center">
+		     <div class="u-container-layout">
+			    <h3 class="u-text-6">Cái kim trong bọc không phải lâu ngày sẽ lòi ra
+.... mà nó sẽ chích lủng cái bọc</h3>
+				<p class="u-text-4">Tôi thích thêm một chút sáng tạo vào mọi thứ tôi làm!</p>
+				<p class="u-text-4">Nếu bạn muốn biết thêm về tôi, chỉ cần liên hệ. Tôi luôn sẵn sàng cho một cuộc trò chuyện thú vị!</p>
+			 </div>
+		 </div>
+		  <div class="u-align-center">
+		     <div class="u-container-layout">
+			    <h3 class="u-text-6">Cảm ơn bạn đã ghé thăm, chiếc bánh Donut phía dưới là của bạn.</h3>
+				<p class="u-text-4">Món quà chiêu đãi khi bạn đến với tôi... Nó được tạo ra bởi những dòng CODE </p>
+				<p class="u-text-4">
                     <canvas id="canvasdonut" width="320" height="240"></canvas>
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <h3 class="text-dark mt-4 mb-4">Education of Lực</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div
-              class="job-detail candidates-profile-education text-center text-muted mb-5 mt-5"
-            >
-              <div class="profile-education-icon">
-                <i class="mdi mdi-school"></i>
-              </div>
-              <h6 class="text-uppercase f-17">
-                <a href="#" class="text-muted">fpt university</a>
-              </h6>
-              <p class="f-14 mb-1">May 2016 - April 2019</p>
-              <p class="f-14 mb-0">Software Engineer</p>
-              <hr class="mt-2 mb-2" />
-              <p class="f-14 mb-0">
-                Vừa học vừa phá.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div
-              class="job-detail candidates-profile-education text-center text-muted mb-5 mt-5"
-            >
-              <div class="profile-education-icon">
-                <i class="mdi mdi-library"></i>
-              </div>
-              <h6 class="text-uppercase f-17">
-                <a href="#" class="text-muted">University of Information Technology - VNUHCM</a>
-              </h6>
-              <p class="f-14 mb-1">May 2014 - April 2015</p>
-              <p class="f-14 mb-0">Computer Science</p>
-              <hr class="mt-2 mb-2" />
-              <p class="f-14 mb-0">
-                Học được 1 năm thì bỏ, vừa học vừa trốn.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div
-              class="job-detail candidates-profile-education text-center text-muted mb-5 mt-5"
-            >
-              <div class="profile-education-icon">
-                <i class="mdi mdi-briefcase-check"></i>
-              </div>
-              <h6 class="text-uppercase f-17">
-                <a href="#" class="text-muted">THPT Ha Huy Tap</a>
-              </h6>
-              <p class="f-14 mb-1">May 2011 - April 2014</p>
-              <p class="f-14 mb-0">Student</p>
-              <hr class="mt-2 mb-2" />
-              <p class="f-14 mb-0">
-               Thời học sinh cấp 3 đáng nhớ.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <h3 class="text-dark mb-4">Experience of Lực</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="job-detail job-list-box mt-4 p-4">
-              <div class="row">
-                <div class="col-lg-3">
-                  <div class="company-brand-logo text-center mb-4">
-                    <img
-                      src="images/featured-job/img-2.png"
-                      alt
-                      class="img-fluid mx-auto d-block"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-9">
-                  <div class="job-list-desc candidates-profile-exp-desc">
-                    <h5 class="f-19 mb-2">
-                      <a href="#" class="text-dark">Unitech</a>
-                    </h5>
-                    <p class="text-muted mb-0 f-16">JAVA Developer</p>
-                    <p class="text-muted mb-0 f-16">Jan 2020</p>
-                    <p class="text-muted mb-0 f-16">Salary : 0$</p>
-                    <p class="text-muted mb-0 f-16">
-                      <i class="mdi mdi-bank mr-2"></i>https://unitech.vn/
-                    </p>
-                    <p class="text-muted mb-0 f-16">
-                      <i class="mdi mdi-map-marker mr-2"></i>07th Floor – Danang Software Park, 02 Quang Trung St., Danang, VN
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="job-detail job-list-box mt-4 p-4">
-              <div class="row">
-                <div class="col-lg-3">
-                  <div class="company-brand-logo text-center mb-4">
-                    <img
-                      src="images/featured-job/img-3.png"
-                      alt
-                      class="img-fluid mx-auto d-block"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-9">
-                  <div class="job-list-desc candidates-profile-exp-desc">
-                    <h5 class="f-19 mb-2">
-                      <a href="#" class="text-dark">Enjoy Works</a>
-                    </h5>
-                    <p class="text-muted mb-0 f-16">JAVA Developer</p>
-                    <p class="text-muted mb-0 f-16">Fab 2019 - July 2020</p>
-                    <p class="text-muted mb-0 f-16">Salary : $0</p>
-                    <p class="text-muted mb-0 f-16">
-                      <i class="mdi mdi-bank mr-2"></i>https://enjoyworks.co.kr/
-                    </p>
-                    <p class="text-muted mb-0 f-16">
-                      <i class="mdi mdi-map-marker mr-2"></i>04998 239-1 Neungdong-ro, Gwangjin-gu, Seoul Tầng 3 2-dong
-                      Thưởng thức công việc
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="job-detail job-list-box mt-4 p-4">
-              <div class="row">
-                <div class="col-lg-3">
-                  <div class="company-brand-logo text-center mb-4">
-                    <img
-                      src="images/featured-job/img-5.png"
-                      alt
-                      class="img-fluid mx-auto d-block"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="job-list-desc candidates-profile-exp-desc">
-                      <h5 class="f-19 mb-2">
-                        <a href="#" class="text-dark">Eco Logistic</a>
-                      </h5>
-                      <p class="text-muted mb-0 f-16">Web Developer</p>
-                      <p class="text-muted mb-0 f-16">Jan 2015 - Dec 2015</p>
-                      <p class="text-muted mb-0 f-16">Salary : $0</p>
-                      <p class="text-muted mb-0 f-16">
-                        <i class="mdi mdi-bank mr-2"></i> Do not have
-                      </p>
-                      <p class="text-muted mb-0 f-16">
-                        <i class="mdi mdi-map-marker mr-2"></i>Do not have
-                      </p>
-                    </div>
-                  </div>
-             
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="job-detail job-list-box mt-4 p-4">
-              <div class="row">
-                <div class="col-lg-3">
-                  <div class="company-brand-logo text-center mb-4">
-                    <img
-                      src="images/featured-job/img-7.png"
-                      alt
-                      class="img-fluid mx-auto d-block"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="job-list-desc candidates-profile-exp-desc">
-                      <h5 class="f-19 mb-2">
-                        <a href="#" class="text-dark">MAMA Company</a>
-                      </h5>
-                      <p class="text-muted mb-0 f-16">AN-BAM-CHA_ME</p>
-                      <p class="text-muted mb-0 f-16">Jan 2014 - Dec 2019</p>
-                      <p class="text-muted mb-0 f-16">Salary : 3m</p>
-                      <p class="text-muted mb-0 f-16">
-                        <i class="mdi mdi-bank mr-2"></i> Do not have
-                      </p>
-                      <p class="text-muted mb-0 f-16">
-                        <i class="mdi mdi-map-marker mr-2"></i>Cam Xuyen - Ha Tinh
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <script
-      data-cfasync="false"
-      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+			 </div>
+		 </div>
+	  </div>
+	   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         (function() {
@@ -623,5 +522,5 @@
             window.addEventListener('load', _onload, false);
         })();
       </script>
-  </body>
+   </body>
 </html>

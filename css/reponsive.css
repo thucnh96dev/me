@@ -1,0 +1,93 @@
+
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 991px) {
+.icon-menu-mb{display:block;position: absolute;
+left: 0;
+top: 0;
+z-index: 102;-webkit-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+cursor: pointer;
+margin: 18px 0 0 15px;}
+.icon-menu-mb i{font-size:24px}
+.container-vb{padding-left:20px;padding-right:20px}
+.header-logo img {margin-left:30px}
+.horizontalMenu{width: 100%;
+background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+left: 0;
+overflow-y: hidden;
+padding: 0;
+top: 0;
+position: fixed;
+visibility: hidden;
+margin: 0px;}
+.show-menu .horizontalMenu {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    visibility: visible;
+    z-index: 1000;
+    top: 0;
+    height: 100% !important;
+}
+.show-menu .horizontalMenu .horizontal-overlapbg {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 3.5s ease-in-out;
+    -moz-transition: opacity 3.5s ease-in-out;
+    -ms-transition: opacity 3.5s ease-in-out;
+    -o-transition: opacity 3.5s ease-in-out;
+}
+.horizontal-overlapbg {
+    right: 0;
+    width: calc(100% - 240px);
+    height: 100vh;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+}
+.show-menu .horizontalMenu > .horizontalMenu-list {
+    webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    margin-left: 0;
+}
+.horizontalMenu > .horizontalMenu-list {
+    height: auto;
+    min-height: 100%;
+    width: 240px;
+    background: #fff;
+    padding-bottom: 0;
+    margin-left: -240px;
+    display: block;
+    text-align: center;
+}
+.warpper{-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+.show-menu .warpper {
+    margin-left: 240px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.row-deck-50 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
